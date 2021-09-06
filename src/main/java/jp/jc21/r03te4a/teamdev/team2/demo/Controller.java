@@ -8,7 +8,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/")
 public class Controller {
     @GetMapping
-    public String index(){
-        return "{\"message\":\"Hello Spring MVC!\"}";
+    public HelloMessage index(){
+        return new HelloMessage("Hello Spring MVC!");
+    }
+}
+
+class HelloMessage{
+    String message;
+    public HelloMessage(String msg){
+        message = msg;
     }
 }

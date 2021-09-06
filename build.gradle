@@ -6,7 +6,7 @@ plugins {
 
 group = 'jp.jc21.r03te4a.teamdev.team2'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '11'
+sourceCompatibility = '8'
 
 repositories {
 	mavenCentral()
